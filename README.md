@@ -1,8 +1,8 @@
-# Codtech-Project-Task-1
-DEPLOYING A WEB APPLICATION ON AWS
-# **Learn how to deploy a simple web application using Amazon Web Services
- (AWS). This project will teach the basics of cloud deployment, including
- setting up a server and configuring the web application.**
+# Codtech-Project-Task-3
+BUILDING A SERVERLESS APPLICATION WITH AWS LAMBDA
+# **Create a serverless application using AWS Lambda. This project will help you
+ understand serverless computing and how to build applications without managing
+ servers.**
 
 This repository contains a simple AWS Serverless Application Model (SAM) application with a Lambda function and an API Gateway. The Lambda function is written in Node.js and is triggered by an HTTP GET request to the /hello path of the API Gateway.
 
