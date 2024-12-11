@@ -1,8 +1,7 @@
 # Codtech-Project-Task-3
 BUILDING A SERVERLESS APPLICATION WITH AWS LAMBDA
-# **Create a serverless application using AWS Lambda. This project will help you
- understand serverless computing and how to build applications without managing
- servers.**
+# **Create a serverless application using AWS Lambda.**
+This project will help you understand serverless computing and how to build applications without managing servers.
 
 This repository contains a simple AWS Serverless Application Model (SAM) application with a Lambda function and an API Gateway. The Lambda function is written in Node.js and is triggered by an HTTP GET request to the /hello path of the API Gateway.
 
