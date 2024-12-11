@@ -20,12 +20,11 @@ The project has the following structure:
 
     .
     ├── README.md
-    ├── hello-world
-    │   └── app.js
+    ├── app.js
     └── template.yaml
 
 - **README.md:** This file, which contains the instructions to set up, deploy, and test the serverless application.
-- **hello-world/:** Directory containing the Lambda function's source code (**app.js**).
+- **app.js/:** the Lambda function's source code (**app.js**).
 - **template.yaml:** The AWS SAM template defining the serverless application's resources and configurations.
 
 ## **Deployment**
@@ -34,7 +33,7 @@ Follow these steps to deploy the serverless application:
 
 1. Clone the repository:
 
-       git clone https://github.com/Afzal-Nezam/Codtech-Project-Task-1
+       git clone https://github.com/Afzal-Nezam/Codtech-Project-Task-3
 
 2. Build the serverless application using the SAM CLI:
 
@@ -50,20 +49,24 @@ Provide the necessary information when prompted, such as the stack name, AWS reg
 
 ## **Testing**
 
-To test the serverless application, send an HTTP GET request to the API Gateway endpoint URL:
+To test your serverless application, make an HTTP GET request to the API Gateway's endpoint URL using a command like this:
 
-    curl https://your-api-gateway-url/Prod/hello/
+curl https://your-api-gateway-url/Prod/hello/
+Replace your-api-gateway-url with the actual URL provided in the deployment details. Upon success, the response should look like this:
 
-Replace **your-api-gateway-url** with the actual API Gateway endpoint URL from the deployment output. The response should be:
-
-    {
-    "Hello from Lambda!"
-    }
+json
+Copy code
+{
+  "message": "Hello from Lambda!"
+}
 
 ## **Cleanup**
 
-To remove the serverless application and its resources, delete the CloudFormation stack using the AWS CLI:
+To delete the serverless application and its associated resources, you can remove the CloudFormation stack using the AWS CLI with the following command:
 
-    aws cloudformation delete-stack --stack-name your-stack-name
+aws cloudformation delete-stack --stack-name your-stack-name
 
-Replace **your-stack-name** with the name you provided during deployment.
+Replace your-stack-name with the name of the stack you created during deployment. This command will clean up all the resources associated with the stack.
+
+#**License**
+This project is licensed under the terms of the MIT License.
