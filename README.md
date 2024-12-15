@@ -1,4 +1,3 @@
-# Codtech-Project-Task-3
 BUILDING A SERVERLESS APPLICATION WITH AWS LAMBDA
 # **Create a serverless application using AWS Lambda.**
 This project will help you understand serverless computing and how to build applications without managing servers.
